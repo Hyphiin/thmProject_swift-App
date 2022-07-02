@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */; };
-		8A81D18828707168004F2DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D18728707168004F2DCC /* ContentView.swift */; };
+		8A81D18828707168004F2DCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D18728707168004F2DCC /* HomeView.swift */; };
 		8A81D18A28707169004F2DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A81D18928707169004F2DCC /* Assets.xcassets */; };
 		8A81D18D28707169004F2DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A81D18C28707169004F2DCC /* Preview Assets.xcassets */; };
+		8A81D19428707556004F2DCC /* KompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D19328707556004F2DCC /* KompassView.swift */; };
+		8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1952870779C004F2DCC /* WasserwaageView.swift */; };
+		8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1972870835E004F2DCC /* SeismometerView.swift */; };
+		8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D199287083A0004F2DCC /* TachometerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A81D18228707168004F2DCC /* WerkzeugApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerkzeugApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerkzeugApp2App.swift; sourceTree = "<group>"; };
-		8A81D18728707168004F2DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A81D18728707168004F2DCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A81D18928707169004F2DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A81D18C28707169004F2DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A81D19328707556004F2DCC /* KompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassView.swift; sourceTree = "<group>"; };
+		8A81D1952870779C004F2DCC /* WasserwaageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasserwaageView.swift; sourceTree = "<group>"; };
+		8A81D1972870835E004F2DCC /* SeismometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismometerView.swift; sourceTree = "<group>"; };
+		8A81D199287083A0004F2DCC /* TachometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachometerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */,
-				8A81D18728707168004F2DCC /* ContentView.swift */,
+				8A81D18728707168004F2DCC /* HomeView.swift */,
+				8A81D199287083A0004F2DCC /* TachometerView.swift */,
+				8A81D1972870835E004F2DCC /* SeismometerView.swift */,
+				8A81D19328707556004F2DCC /* KompassView.swift */,
+				8A81D1952870779C004F2DCC /* WasserwaageView.swift */,
 				8A81D18928707169004F2DCC /* Assets.xcassets */,
 				8A81D18B28707169004F2DCC /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A81D18828707168004F2DCC /* ContentView.swift in Sources */,
+				8A81D18828707168004F2DCC /* HomeView.swift in Sources */,
+				8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */,
+				8A81D19428707556004F2DCC /* KompassView.swift in Sources */,
 				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,
+				8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */,
+				8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

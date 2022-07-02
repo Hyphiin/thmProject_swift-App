@@ -7,27 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A6D046A286318AF00313D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0469286318AF00313D17 /* AppDelegate.swift */; };
-		8A6D046C286318AF00313D17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D046B286318AF00313D17 /* SceneDelegate.swift */; };
-		8A6D046E286318AF00313D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D046D286318AF00313D17 /* ViewController.swift */; };
-		8A6D0471286318AF00313D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D046F286318AF00313D17 /* Main.storyboard */; };
-		8A6D0473286318B000313D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0472286318B000313D17 /* Assets.xcassets */; };
-		8A6D0476286318B000313D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0474286318B000313D17 /* LaunchScreen.storyboard */; };
+		8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */; };
+		8A81D18828707168004F2DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D18728707168004F2DCC /* ContentView.swift */; };
+		8A81D18A28707169004F2DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A81D18928707169004F2DCC /* Assets.xcassets */; };
+		8A81D18D28707169004F2DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A81D18C28707169004F2DCC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A6D0466286318AF00313D17 /* WerkzeugApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerkzeugApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A6D0469286318AF00313D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A6D046B286318AF00313D17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A6D046D286318AF00313D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A6D0470286318AF00313D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A6D0472286318B000313D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8A6D0475286318B000313D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A6D0477286318B000313D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A81D18228707168004F2DCC /* WerkzeugApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerkzeugApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerkzeugApp2App.swift; sourceTree = "<group>"; };
+		8A81D18728707168004F2DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A81D18928707169004F2DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A81D18C28707169004F2DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8A6D0463286318AF00313D17 /* Frameworks */ = {
+		8A81D17F28707168004F2DCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A6D045D286318AF00313D17 = {
+		8A81D17928707168004F2DCC = {
 			isa = PBXGroup;
 			children = (
-				8A6D0468286318AF00313D17 /* WerkzeugApp */,
-				8A6D0467286318AF00313D17 /* Products */,
+				8A81D18428707168004F2DCC /* WerkzeugApp2 */,
+				8A81D18328707168004F2DCC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8A6D0467286318AF00313D17 /* Products */ = {
+		8A81D18328707168004F2DCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A6D0466286318AF00313D17 /* WerkzeugApp.app */,
+				8A81D18228707168004F2DCC /* WerkzeugApp2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A6D0468286318AF00313D17 /* WerkzeugApp */ = {
+		8A81D18428707168004F2DCC /* WerkzeugApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				8A6D0469286318AF00313D17 /* AppDelegate.swift */,
-				8A6D046B286318AF00313D17 /* SceneDelegate.swift */,
-				8A6D046D286318AF00313D17 /* ViewController.swift */,
-				8A6D046F286318AF00313D17 /* Main.storyboard */,
-				8A6D0472286318B000313D17 /* Assets.xcassets */,
-				8A6D0474286318B000313D17 /* LaunchScreen.storyboard */,
-				8A6D0477286318B000313D17 /* Info.plist */,
+				8A81D18528707168004F2DCC /* WerkzeugApp2App.swift */,
+				8A81D18728707168004F2DCC /* ContentView.swift */,
+				8A81D18928707169004F2DCC /* Assets.xcassets */,
+				8A81D18B28707169004F2DCC /* Preview Content */,
 			);
-			path = WerkzeugApp;
+			path = WerkzeugApp2;
+			sourceTree = "<group>";
+		};
+		8A81D18B28707169004F2DCC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A81D18C28707169004F2DCC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A6D0465286318AF00313D17 /* WerkzeugApp */ = {
+		8A81D18128707168004F2DCC /* WerkzeugApp2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A6D047A286318B000313D17 /* Build configuration list for PBXNativeTarget "WerkzeugApp" */;
+			buildConfigurationList = 8A81D19028707169004F2DCC /* Build configuration list for PBXNativeTarget "WerkzeugApp2" */;
 			buildPhases = (
-				8A6D0462286318AF00313D17 /* Sources */,
-				8A6D0463286318AF00313D17 /* Frameworks */,
-				8A6D0464286318AF00313D17 /* Resources */,
+				8A81D17E28707168004F2DCC /* Sources */,
+				8A81D17F28707168004F2DCC /* Frameworks */,
+				8A81D18028707168004F2DCC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WerkzeugApp;
-			productName = WerkzeugApp;
-			productReference = 8A6D0466286318AF00313D17 /* WerkzeugApp.app */;
+			name = WerkzeugApp2;
+			productName = WerkzeugApp2;
+			productReference = 8A81D18228707168004F2DCC /* WerkzeugApp2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8A6D045E286318AF00313D17 /* Project object */ = {
+		8A81D17A28707168004F2DCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					8A6D0465286318AF00313D17 = {
+					8A81D18128707168004F2DCC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 8A6D0461286318AF00313D17 /* Build configuration list for PBXProject "WerkzeugApp" */;
+			buildConfigurationList = 8A81D17D28707168004F2DCC /* Build configuration list for PBXProject "WerkzeugApp2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,63 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 8A6D045D286318AF00313D17;
-			productRefGroup = 8A6D0467286318AF00313D17 /* Products */;
+			mainGroup = 8A81D17928707168004F2DCC;
+			productRefGroup = 8A81D18328707168004F2DCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A6D0465286318AF00313D17 /* WerkzeugApp */,
+				8A81D18128707168004F2DCC /* WerkzeugApp2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8A6D0464286318AF00313D17 /* Resources */ = {
+		8A81D18028707168004F2DCC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6D0476286318B000313D17 /* LaunchScreen.storyboard in Resources */,
-				8A6D0473286318B000313D17 /* Assets.xcassets in Resources */,
-				8A6D0471286318AF00313D17 /* Main.storyboard in Resources */,
+				8A81D18D28707169004F2DCC /* Preview Assets.xcassets in Resources */,
+				8A81D18A28707169004F2DCC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8A6D0462286318AF00313D17 /* Sources */ = {
+		8A81D17E28707168004F2DCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6D046E286318AF00313D17 /* ViewController.swift in Sources */,
-				8A6D046A286318AF00313D17 /* AppDelegate.swift in Sources */,
-				8A6D046C286318AF00313D17 /* SceneDelegate.swift in Sources */,
+				8A81D18828707168004F2DCC /* ContentView.swift in Sources */,
+				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		8A6D046F286318AF00313D17 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A6D0470286318AF00313D17 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8A6D0474286318B000313D17 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A6D0475286318B000313D17 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		8A6D0478286318B000313D17 /* Debug */ = {
+		8A81D18E28707169004F2DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		8A6D0479286318B000313D17 /* Release */ = {
+		8A81D18F28707169004F2DCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,18 +261,19 @@
 			};
 			name = Release;
 		};
-		8A6D047B286318B000313D17 /* Debug */ = {
+		8A81D19128707169004F2DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WerkzeugApp2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WerkzeugApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.WerkzeugApp;
+				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.WerkzeugApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,18 +289,19 @@
 			};
 			name = Debug;
 		};
-		8A6D047C286318B000313D17 /* Release */ = {
+		8A81D19228707169004F2DCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WerkzeugApp2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WerkzeugApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.WerkzeugApp;
+				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.WerkzeugApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A6D0461286318AF00313D17 /* Build configuration list for PBXProject "WerkzeugApp" */ = {
+		8A81D17D28707168004F2DCC /* Build configuration list for PBXProject "WerkzeugApp2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A6D0478286318B000313D17 /* Debug */,
-				8A6D0479286318B000313D17 /* Release */,
+				8A81D18E28707169004F2DCC /* Debug */,
+				8A81D18F28707169004F2DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A6D047A286318B000313D17 /* Build configuration list for PBXNativeTarget "WerkzeugApp" */ = {
+		8A81D19028707169004F2DCC /* Build configuration list for PBXNativeTarget "WerkzeugApp2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A6D047B286318B000313D17 /* Debug */,
-				8A6D047C286318B000313D17 /* Release */,
+				8A81D19128707169004F2DCC /* Debug */,
+				8A81D19228707169004F2DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8A6D045E286318AF00313D17 /* Project object */;
+	rootObject = 8A81D17A28707168004F2DCC /* Project object */;
 }

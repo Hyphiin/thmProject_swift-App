@@ -15,6 +15,7 @@
 		8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1952870779C004F2DCC /* WasserwaageView.swift */; };
 		8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1972870835E004F2DCC /* SeismometerView.swift */; };
 		8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D199287083A0004F2DCC /* TachometerView.swift */; };
+		8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D19B28708BA2004F2DCC /* KompassLogik.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8A81D1952870779C004F2DCC /* WasserwaageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasserwaageView.swift; sourceTree = "<group>"; };
 		8A81D1972870835E004F2DCC /* SeismometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismometerView.swift; sourceTree = "<group>"; };
 		8A81D199287083A0004F2DCC /* TachometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachometerView.swift; sourceTree = "<group>"; };
+		8A81D19B28708BA2004F2DCC /* KompassLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassLogik.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				8A81D199287083A0004F2DCC /* TachometerView.swift */,
 				8A81D1972870835E004F2DCC /* SeismometerView.swift */,
 				8A81D19328707556004F2DCC /* KompassView.swift */,
+				8A81D19B28708BA2004F2DCC /* KompassLogik.swift */,
 				8A81D1952870779C004F2DCC /* WasserwaageView.swift */,
 				8A81D18928707169004F2DCC /* Assets.xcassets */,
 				8A81D18B28707169004F2DCC /* Preview Content */,
@@ -153,6 +156,7 @@
 				8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */,
 				8A81D19428707556004F2DCC /* KompassView.swift in Sources */,
 				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,
+				8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */,
 				8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */,
 				8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */,
 			);

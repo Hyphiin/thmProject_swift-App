@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct KompassView: View {
+    @ObservedObject var compassHeading = KompassLogik()
+    
     var body: some View {
         VStack{
             Capsule()
@@ -18,7 +20,7 @@ struct KompassView: View {
                 }
             }
             .frame(width: 300, height: 300)
-            .rotationEffect(Angle(degrees: 0))
+            .rotationEffect(Angle(degrees: self.compassHeading.degrees))
             .statusBar(hidden: true)
         }
         .navigationTitle("Kompass")

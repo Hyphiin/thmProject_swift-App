@@ -13,11 +13,6 @@
 		8A6D0471286318AF00313D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D046F286318AF00313D17 /* Main.storyboard */; };
 		8A6D0473286318B000313D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0472286318B000313D17 /* Assets.xcassets */; };
 		8A6D0476286318B000313D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0474286318B000313D17 /* LaunchScreen.storyboard */; };
-		8A951FD0286C9D610043683A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FCF286C9D610043683A /* HomeVC.swift */; };
-		8A951FD2286C9DA80043683A /* WasserwaageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FD1286C9DA80043683A /* WasserwaageVC.swift */; };
-		8A951FD4286CBA7B0043683A /* KompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FD3286CBA7B0043683A /* KompassVC.swift */; };
-		8A951FD6286CBA8B0043683A /* GeschwindigkeitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FD5286CBA8B0043683A /* GeschwindigkeitsVC.swift */; };
-		8A951FD8286CBA9A0043683A /* GPSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FD7286CBA9A0043683A /* GPSVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +24,6 @@
 		8A6D0472286318B000313D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6D0475286318B000313D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6D0477286318B000313D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A951FCF286C9D610043683A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		8A951FD1286C9DA80043683A /* WasserwaageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasserwaageVC.swift; sourceTree = "<group>"; };
-		8A951FD3286CBA7B0043683A /* KompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassVC.swift; sourceTree = "<group>"; };
-		8A951FD5286CBA8B0043683A /* GeschwindigkeitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeschwindigkeitsVC.swift; sourceTree = "<group>"; };
-		8A951FD7286CBA9A0043683A /* GPSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +60,6 @@
 				8A6D046B286318AF00313D17 /* SceneDelegate.swift */,
 				8A6D046D286318AF00313D17 /* ViewController.swift */,
 				8A6D046F286318AF00313D17 /* Main.storyboard */,
-				8A951FCF286C9D610043683A /* HomeVC.swift */,
-				8A951FD3286CBA7B0043683A /* KompassVC.swift */,
-				8A951FD5286CBA8B0043683A /* GeschwindigkeitsVC.swift */,
-				8A951FD7286CBA9A0043683A /* GPSVC.swift */,
-				8A951FD1286C9DA80043683A /* WasserwaageVC.swift */,
 				8A6D0472286318B000313D17 /* Assets.xcassets */,
 				8A6D0474286318B000313D17 /* LaunchScreen.storyboard */,
 				8A6D0477286318B000313D17 /* Info.plist */,
@@ -153,14 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A951FD0286C9D610043683A /* HomeVC.swift in Sources */,
-				8A951FD8286CBA9A0043683A /* GPSVC.swift in Sources */,
-				8A951FD2286C9DA80043683A /* WasserwaageVC.swift in Sources */,
 				8A6D046E286318AF00313D17 /* ViewController.swift in Sources */,
-				8A951FD6286CBA8B0043683A /* GeschwindigkeitsVC.swift in Sources */,
 				8A6D046A286318AF00313D17 /* AppDelegate.swift in Sources */,
 				8A6D046C286318AF00313D17 /* SceneDelegate.swift in Sources */,
-				8A951FD4286CBA7B0043683A /* KompassVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

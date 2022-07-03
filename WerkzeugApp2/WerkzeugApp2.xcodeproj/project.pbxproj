@@ -16,6 +16,7 @@
 		8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1972870835E004F2DCC /* SeismometerView.swift */; };
 		8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D199287083A0004F2DCC /* TachometerView.swift */; };
 		8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D19B28708BA2004F2DCC /* KompassLogik.swift */; };
+		8A951FE72871AC7A006F8DEF /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FE62871AC7A006F8DEF /* MotionDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8A81D1972870835E004F2DCC /* SeismometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismometerView.swift; sourceTree = "<group>"; };
 		8A81D199287083A0004F2DCC /* TachometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachometerView.swift; sourceTree = "<group>"; };
 		8A81D19B28708BA2004F2DCC /* KompassLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassLogik.swift; sourceTree = "<group>"; };
+		8A951FE62871AC7A006F8DEF /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				8A81D1972870835E004F2DCC /* SeismometerView.swift */,
 				8A81D19328707556004F2DCC /* KompassView.swift */,
 				8A81D19B28708BA2004F2DCC /* KompassLogik.swift */,
+				8A951FE62871AC7A006F8DEF /* MotionDetector.swift */,
 				8A81D1952870779C004F2DCC /* WasserwaageView.swift */,
 				8A81D18928707169004F2DCC /* Assets.xcassets */,
 				8A81D18B28707169004F2DCC /* Preview Content */,
@@ -159,6 +162,7 @@
 				8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */,
 				8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */,
 				8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */,
+				8A951FE72871AC7A006F8DEF /* MotionDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 		8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D1972870835E004F2DCC /* SeismometerView.swift */; };
 		8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D199287083A0004F2DCC /* TachometerView.swift */; };
 		8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D19B28708BA2004F2DCC /* KompassLogik.swift */; };
+		8A828DDD2871C2B700BE49B8 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */; };
 		8A951FE72871AC7A006F8DEF /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FE62871AC7A006F8DEF /* MotionDetector.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		8A81D1972870835E004F2DCC /* SeismometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismometerView.swift; sourceTree = "<group>"; };
 		8A81D199287083A0004F2DCC /* TachometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachometerView.swift; sourceTree = "<group>"; };
 		8A81D19B28708BA2004F2DCC /* KompassLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassLogik.swift; sourceTree = "<group>"; };
+		8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		8A951FE62871AC7A006F8DEF /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +71,9 @@
 				8A81D1972870835E004F2DCC /* SeismometerView.swift */,
 				8A81D19328707556004F2DCC /* KompassView.swift */,
 				8A81D19B28708BA2004F2DCC /* KompassLogik.swift */,
-				8A951FE62871AC7A006F8DEF /* MotionDetector.swift */,
 				8A81D1952870779C004F2DCC /* WasserwaageView.swift */,
+				8A951FE62871AC7A006F8DEF /* MotionDetector.swift */,
+				8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */,
 				8A81D18928707169004F2DCC /* Assets.xcassets */,
 				8A81D18B28707169004F2DCC /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				8A81D18828707168004F2DCC /* HomeView.swift in Sources */,
 				8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */,
 				8A81D19428707556004F2DCC /* KompassView.swift in Sources */,
+				8A828DDD2871C2B700BE49B8 /* DoubleExtension.swift in Sources */,
 				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,
 				8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */,
 				8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */,
@@ -293,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WerkzeugApp2/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G6786VWQ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WerkzeugApp2/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G6786VWQ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

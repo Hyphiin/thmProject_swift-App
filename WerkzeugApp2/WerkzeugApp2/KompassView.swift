@@ -88,7 +88,7 @@ struct CompassMarkerView: View {
     }
     
     private func capsuleColor() -> Color {
-        return self.marker.degrees == 0 ? .red : .gray
+        return self.marker.degrees == 0 ? .accentColor : .gray
     }
     
     private func textAngle() -> Angle {

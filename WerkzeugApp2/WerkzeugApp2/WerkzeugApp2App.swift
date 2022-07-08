@@ -13,5 +13,8 @@ struct WerkzeugApp2App: App {
         WindowGroup {
             HomeView()
         }
+   
     }
 }
+
+

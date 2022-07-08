@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject static private var detector = MotionDetector(updateInterval: 0.01).started()
+    @State static private var detector = MotionDetector(updateInterval: 0.01).started()
     
     var body: some View {
         
@@ -35,7 +35,7 @@ struct HomeView: View {
                     ButtonView(text: "Seismometer")
                 }
                 .buttonStyle(LinkStyle())
-                NavigationLink(destination: Text({"Taschenlampe"}()))
+                NavigationLink(destination: TaschenlampeView())
                 {
                     ButtonView(text: "Taschenlampe")
                 }
@@ -94,7 +94,7 @@ extension Color {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     @StateObject static private var motionDetector = MotionDetector(updateInterval: 0.01).started()
     
     static var previews: some View {

@@ -18,6 +18,7 @@
 		8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A81D19B28708BA2004F2DCC /* KompassLogik.swift */; };
 		8A828DDD2871C2B700BE49B8 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */; };
 		8A951FE72871AC7A006F8DEF /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FE62871AC7A006F8DEF /* MotionDetector.swift */; };
+		8A9C70B8287830710085AB11 /* TaschenlampeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C70B7287830710085AB11 /* TaschenlampeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8A81D19B28708BA2004F2DCC /* KompassLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KompassLogik.swift; sourceTree = "<group>"; };
 		8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		8A951FE62871AC7A006F8DEF /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
+		8A9C70B7287830710085AB11 /* TaschenlampeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaschenlampeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				8A81D199287083A0004F2DCC /* TachometerView.swift */,
 				8A81D1972870835E004F2DCC /* SeismometerView.swift */,
 				8A81D19328707556004F2DCC /* KompassView.swift */,
+				8A9C70B7287830710085AB11 /* TaschenlampeView.swift */,
 				8A81D19B28708BA2004F2DCC /* KompassLogik.swift */,
 				8A81D1952870779C004F2DCC /* WasserwaageView.swift */,
 				8A951FE62871AC7A006F8DEF /* MotionDetector.swift */,
@@ -163,6 +166,7 @@
 				8A81D19428707556004F2DCC /* KompassView.swift in Sources */,
 				8A828DDD2871C2B700BE49B8 /* DoubleExtension.swift in Sources */,
 				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,
+				8A9C70B8287830710085AB11 /* TaschenlampeView.swift in Sources */,
 				8A81D19C28708BA2004F2DCC /* KompassLogik.swift in Sources */,
 				8A81D19A287083A0004F2DCC /* TachometerView.swift in Sources */,
 				8A81D1982870835E004F2DCC /* SeismometerView.swift in Sources */,

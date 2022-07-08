@@ -76,7 +76,7 @@ struct WasserwaageView: View {
         VStack {
             Text("Horizontal: " + rollString)
                 .font(.system(.body, design: .monospaced))
-            Text("Vertical: " + pitchString)
+            Text("Vertikal: " + pitchString)
                 .font(.system(.body, design: .monospaced))
         }
         .offset(x: 0, y: 50)

@@ -22,6 +22,10 @@ struct KompassView: View {
             .frame(width: 300, height: 300)
             .rotationEffect(Angle(degrees: self.compassHeading.degrees))
             .statusBar(hidden: true)
+            Text("Grad: " + String(self.compassHeading.degrees * -1) + "°")
+                .fontWeight(.semibold)
+                .padding()
+        
         }
         .navigationTitle("Kompass")
     }
@@ -38,16 +42,16 @@ struct Marker: Hashable {
     
     static func markers() -> [Marker] {
         return [
-            Marker(degrees: 0, lable: "N"),
+            Marker(degrees: 0, lable: "S"),
             Marker(degrees: 30, lable: ""),
             Marker(degrees: 60, lable: ""),
-            Marker(degrees: 90, lable: "E"),
+            Marker(degrees: 90, lable: "W"),
             Marker(degrees: 120, lable: ""),
             Marker(degrees: 150, lable: ""),
-            Marker(degrees: 180, lable: "S"),
+            Marker(degrees: 180, lable: "N"),
             Marker(degrees: 210, lable: ""),
             Marker(degrees: 240, lable: ""),
-            Marker(degrees: 270, lable: "W"),
+            Marker(degrees: 270, lable: "E"),
             Marker(degrees: 300, lable: ""),
             Marker(degrees: 330, lable: ""),
         ]
@@ -77,6 +81,7 @@ struct CompassMarkerView: View {
                 .padding(.bottom, 80)
         }
         .rotationEffect(Angle(degrees: marker.degrees))
+        
     }
     
     private func capsuleWidth() -> CGFloat {

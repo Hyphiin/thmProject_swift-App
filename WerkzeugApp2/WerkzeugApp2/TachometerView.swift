@@ -16,19 +16,23 @@ struct TachometerView: View {
     let steperSplit: Int = 10
     
     
-    var prevTime = NSDate().timeIntervalSince1970
-    var speedX = 0
+   
+    @State var speedX: Int = 0
     
-    var speed: Int {
-        let xAcceleration = motionDetector.xAcceleration
-        let yAcceleration = motionDetector.yAcceleration
-        let zAcceleration = motionDetector.zAcceleration
-        var currentTime = NSDate().timeIntervalSince1970
-        var timer = Timer()
-        var updateInterval: TimeInterval
+    var speed: Int{
+        let currentTime = CACurrentMediaTime();
+        let prevTime = CACurrentMediaTime() - 0.01;
         
-        print(speedX)
-        //prevTime = currentTime
+        let xAcceleration = motionDetector.xAcceleration
+        //let yAcceleration = motionDetector.yAcceleration
+        //let zAcceleration = motionDetector.zAcceleration
+        
+        speedX = speedX + Int(xAcceleration * (currentTime - prevTime))
+        
+        print("xAcceleration: \(xAcceleration)")
+        print("speedX: \(speedX)")
+        print("prevTime: \(prevTime)")
+        print("currentTime: \(currentTime)")
         return speedX
     }
      
@@ -70,7 +74,7 @@ struct TachometerView: View {
     
     var body: some View {
         ZStack {
-            Text("\(stateValue, specifier: "%0.0f")")
+            Text("\(speed, specifier: "%0.0f")")
                 .font(.system(size: 40, weight: Font.Weight.bold))
                 .foregroundColor(.accentColor)
                 .offset(x: 0, y: 40)
@@ -85,8 +89,8 @@ struct TachometerView: View {
                 .foregroundColor(.accentColor)
                 .frame(width: 140, height: 6)
                 .offset(x: -70, y: 0)
-                .rotationEffect(.init(degrees: getAngle(value: stateValue)), anchor: .center)
-                .animation(.linear, value: stateValue)
+                .rotationEffect(.init(degrees: getAngle(value: Double(speed))), anchor: .center)
+                .animation(.linear, value: speed)
             Circle()
                 .frame(width: 20, height: 20)
                 .foregroundColor(.accentColor)

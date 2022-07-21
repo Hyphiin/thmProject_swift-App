@@ -12,6 +12,7 @@ struct TaschenlampeView: View {
     
     @State var toggleOn = false
     
+    //Computed um richtiges Icon anzuzeigen
     var cardIcon: String {
         var iconName = ""
         if toggleOn {
@@ -22,6 +23,7 @@ struct TaschenlampeView: View {
         return iconName
     }
     
+    //Computed um richtigen String anzuzeigen
     var cardTitle: String {
         var title = ""
         if toggleOn {
@@ -32,6 +34,7 @@ struct TaschenlampeView: View {
         return title
     }
     
+    //wird aufgerufen, wenn Button gedrückt wird
     func toggleTorch() {
         toggleOn = !toggleOn
         guard let device = AVCaptureDevice.default(for: .video) else { return }
@@ -60,6 +63,7 @@ struct TaschenlampeView: View {
             VStack{
                 HStack{
                     Button(action: { toggleTorch()}){
+                        //CardView aus HomeView wiederverwertet
                         CardView(
                             iconName: cardIcon,
                             title: cardTitle
@@ -73,6 +77,7 @@ struct TaschenlampeView: View {
         }
         .navigationTitle("Taschenlampe")
         .frame(minWidth: 400, minHeight: 1500)
+        //Background farblich angepasst, um wenigstens so eine Taschenlampe zu erzeugen
         .background(toggleOn ? .white : .black)
         .padding(.top,30)
     }

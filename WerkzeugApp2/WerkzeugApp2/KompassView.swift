@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct KompassView: View {
+    //benutzt KompassLogik() für Logik
     @ObservedObject var compassHeading = KompassLogik()
     
     var body: some View {
@@ -20,6 +21,7 @@ struct KompassView: View {
                 }
             }
             .frame(width: 300, height: 300)
+            //Rotation des gesamten Kompasselements
             .rotationEffect(Angle(degrees: self.compassHeading.degrees))
             .statusBar(hidden: true)
             Text("Grad: " + String(self.compassHeading.degrees * -1) + "°")
@@ -29,9 +31,9 @@ struct KompassView: View {
         }
         .navigationTitle("Kompass")        
     }
-     
 }
 
+//Marker Struct, welches für Layout des Kompass zuständig ist
 struct Marker: Hashable {
     let degrees: Double
     let lable: String
@@ -40,7 +42,7 @@ struct Marker: Hashable {
         self.degrees = degrees
         self.lable = lable
     }
-    
+    //Array an Marker-Objekten, Aufbau eines Kompass
     static func markers() -> [Marker] {
         return [
             Marker(degrees: 0, lable: "S"),
@@ -57,12 +59,13 @@ struct Marker: Hashable {
             Marker(degrees: 330, lable: ""),
         ]
     }
-    
+    //Hilfsfunktion, um aus degrees String zu erzeugen
     func degreeText() -> String {
         return String(format: "%.0f", self.degrees)
     }
 }
 
+//View, welche für jeden Marker im MarkerArray eingesetzt wird
 struct CompassMarkerView: View {
     let marker: Marker
     let compassDegrees: Double
@@ -76,6 +79,7 @@ struct CompassMarkerView: View {
                 .frame(width: self.capsuleWidth(), height: self.capsuleHeight())
                 .foregroundColor(self.capsuleColor())
                 .padding(.bottom, 120)
+            //Label ("N","E",..) wenn vorhanden
             Text(marker.lable)
                 .fontWeight(.bold)
                 .rotationEffect(self.textAngle())

@@ -21,7 +21,6 @@
 		8A951FE72871AC7A006F8DEF /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A951FE62871AC7A006F8DEF /* MotionDetector.swift */; };
 		8A9C70B8287830710085AB11 /* TaschenlampeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C70B7287830710085AB11 /* TaschenlampeView.swift */; };
 		8ABB24D128882E3C0072F5CC /* StepcounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB24D028882E3C0072F5CC /* StepcounterView.swift */; };
-		8AE9DF0628849780003E8A0F /* TachometerLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9DF0528849780003E8A0F /* TachometerLogik.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		8A9C70B7287830710085AB11 /* TaschenlampeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaschenlampeView.swift; sourceTree = "<group>"; };
 		8ABB24D028882E3C0072F5CC /* StepcounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepcounterView.swift; sourceTree = "<group>"; };
 		8ABB24D2288887B50072F5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8AE9DF0528849780003E8A0F /* TachometerLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachometerLogik.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				8A9C70B7287830710085AB11 /* TaschenlampeView.swift */,
 				8A951FE62871AC7A006F8DEF /* MotionDetector.swift */,
 				8A81D199287083A0004F2DCC /* TachometerView.swift */,
-				8AE9DF0528849780003E8A0F /* TachometerLogik.swift */,
 				8A828DDC2871C2B700BE49B8 /* DoubleExtension.swift */,
 				8A81D18928707169004F2DCC /* Assets.xcassets */,
 				8A81D18B28707169004F2DCC /* Preview Content */,
@@ -174,7 +171,6 @@
 			files = (
 				8A81D18828707168004F2DCC /* HomeView.swift in Sources */,
 				8A81D1962870779C004F2DCC /* WasserwaageView.swift in Sources */,
-				8AE9DF0628849780003E8A0F /* TachometerLogik.swift in Sources */,
 				8A81D19428707556004F2DCC /* KompassView.swift in Sources */,
 				8A828DDD2871C2B700BE49B8 /* DoubleExtension.swift in Sources */,
 				8A81D18628707168004F2DCC /* WerkzeugApp2App.swift in Sources */,

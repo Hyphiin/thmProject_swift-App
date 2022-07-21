@@ -46,7 +46,6 @@ struct WasserwaageView: View {
     var body: some View {
         backgroundView()
             .frame(width: generalSize, height: generalSize)
-            
             //overlay = on top of Circle
             .overlay(
                 //ZStack = on top of each other
@@ -88,6 +87,7 @@ struct WasserwaageView: View {
     }
 }
 
+//etwas ausprobiert, damit Form etwas interessanter wirkt
 struct backgroundView: View {
     let generalSize: CGFloat = 320
     
@@ -136,7 +136,6 @@ struct backgroundView: View {
             .aspectRatio(1, contentMode: .fit)
     }
 }
-
 
 struct Hexagon {
     struct Segment {

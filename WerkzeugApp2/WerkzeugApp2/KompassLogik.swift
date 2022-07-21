@@ -12,11 +12,13 @@ import SwiftUI
 
 class KompassLogik: NSObject, ObservableObject, CLLocationManagerDelegate {
     var objectWillChange = PassthroughSubject<Void, Never>()
+    //Objekt für Kompass
     var degrees: Double = .zero {
         didSet {
             objectWillChange.send()
         }
     }
+    //Objekt für Tachometer
     var speed: Double = .zero {
         didSet {
             objectWillChange.send()
@@ -48,12 +50,10 @@ class KompassLogik: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let latestLocation: AnyObject = locations[locations.count - 1]
         speed = latestLocation.speed
-        print("didUpdateLocations: \(latestLocation)")
     }
     
     func locationManager (_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         self.degrees = -1 * newHeading.magneticHeading
-        print("didUpdateHeading:")
     }
     
 }

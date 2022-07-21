@@ -18,6 +18,7 @@ class MotionDetector: ObservableObject {
     //Drehung(roll) und Neigung(pitch)
     @Published var pitch: Double = 0
     @Published var roll: Double = 0
+    
     //einzelne Beschleunigungen an den Achsen
     @Published var xAcceleration: Double = 0
     @Published var yAcceleration: Double = 0
@@ -27,13 +28,11 @@ class MotionDetector: ObservableObject {
     //Schrittzähler
     private let pedometer: CMPedometer = CMPedometer()
     @Published var steps: Int? = nil
-    
     //Hilfsfunktion zur Überprüfung ob Schrittzähler verfügbar ist
     private var isPedometerAvailable: Bool {
         return CMPedometer.isPedometerEventTrackingAvailable() &&
         CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable()
     }
-    
     private func startPedometer() {
         if isPedometerAvailable {
             pedometer.startUpdates(from: Date()) {(data, error) in
@@ -119,7 +118,6 @@ class MotionDetector: ObservableObject {
         }
         
         prevTime = currentTime
-        
         //prevAcceleration = currentAcceleration
     }
     
@@ -156,6 +154,7 @@ class MotionDetector: ObservableObject {
             }
     }
     
+    //sobald MotionManager gestartet wird, wird diese Funktion mit jedem Timerinterval aufgerufen
     func updateMotionData() {
         if let data = motionManager.deviceMotion {
             (roll, pitch) = currentOrientation.adjustedRollAndPitch(data.attitude)
@@ -165,7 +164,8 @@ class MotionDetector: ObservableObject {
             accelerometer()
         }
     }
-     
+    
+    //Funktion die aufgerufen wird, wenn MotionManager stoppen soll
     func stop() {
         motionManager.stopDeviceMotionUpdates()
         timer.invalidate()

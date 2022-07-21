@@ -19,14 +19,18 @@ struct RechnerView: View {
 
     let operators = ["/","+","*","-","%"]
 
+    //Eingabe(Rechnung), die über dem Ergebnis angezeigt wird
     @State var visibleWorkings = ""
+    //Ergebnis, dass angezeigt wird
     @State var visibleResults = ""
+    //bei Falscheingabe z.B. "-="
     @State var showAlert = false
     
     var body: some View {
         VStack {
             HStack {
                 Spacer()
+                //Eingabe
                 Text(visibleWorkings)
                     .padding()
                     .font(.system(size: 30, weight: .heavy))
@@ -34,12 +38,13 @@ struct RechnerView: View {
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
             HStack {
                 Spacer()
+                //Ergebnis
                 Text(visibleResults)
                     .padding()
                     .font(.system(size: 50, weight: .heavy))
                     .foregroundColor(Color.ui.primaryText)
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            
+            //Felder, erstellt aus dem grid
             ForEach(grid, id: \.self){
                 row in
                 HStack{
@@ -55,6 +60,7 @@ struct RechnerView: View {
                 }
             }
         }
+        //Benachrichtigung bei Falscheingabe
         .alert(isPresented: $showAlert){
             Alert(title: Text("Ungültige Eingabe"),
                   message: Text(visibleWorkings),
@@ -64,6 +70,7 @@ struct RechnerView: View {
         .navigationTitle("Taschenrechner")
     }
 
+    //Hilfsfunktion, um Operatoren besonders einzufärben
     func buttonColor(_ cell: String) -> Color {
         if(cell == "AC" || cell == "⌦"){
             return .red
@@ -74,21 +81,29 @@ struct RechnerView: View {
         
         return Color.ui.primaryText
     }
-
+    
+    //wird aufgerufen, wenn ein Button im grid Feld gedrückt wird
+    //je nach cell-value wird andere Operation vorgenommen
     func buttonPressed(cell: String)  {
         switch cell {
         case "AC":
+            //alles löschen
             visibleWorkings = ""
             visibleResults = ""
         case "⌦":
+            //letztes Element in EingabeString löschen
             visibleWorkings = String(visibleWorkings.dropLast())
         case "=":
+            //Ergebnis ausrechnen
             visibleResults = calcResults()
         case "-":
+            //Minus einfügen
             addMinus()
         case "*","/","%","+":
+            //Operator einfügen
             addOperator(cell)
         default:
+            //Bei Eingabe einer Zahl = EingabeString plus diese Zahl
             visibleWorkings += cell
         }
     }
@@ -110,7 +125,9 @@ struct RechnerView: View {
     
     func calcResults() -> String {
         if(validInput()){
+            //%-Zeichen wird mit *0.01 ersetzt
             let workings  = visibleWorkings.replacingOccurrences(of: "%", with: "*0.01")
+            //NSExpression wandelt String(workings) in Mathematische Funktion um
             let expression = NSExpression(format: workings)
             let result =  expression.expressionValue(with: nil, context: nil) as! Double
             
@@ -119,6 +136,7 @@ struct RechnerView: View {
         showAlert = true
         return ""
     }
+    //schaut ob Eingabe korrekt ist (nicht leer, letztes Element kein Operator, ".")
     func validInput() -> Bool {
         if(visibleWorkings.isEmpty){
             return false
@@ -128,6 +146,9 @@ struct RechnerView: View {
             if(last != "%" || visibleWorkings.count == 1){
                 return false
             }
+        }
+        if last == "."{
+            return false
         }
         return true
     }

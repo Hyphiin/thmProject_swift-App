@@ -12,12 +12,12 @@ struct SeismometerView: View{
     
     //Ankerpunkt der Nadel
     let needle = UnitPoint(x: 0.5, y: 1)
+    
     let amplification = 2.0
     var rotation: Angle {
         Angle(radians: -motionDetector.zAcceleration * amplification)
     }
-    
-    
+        
     var body: some View {
         VStack {
             Spacer()

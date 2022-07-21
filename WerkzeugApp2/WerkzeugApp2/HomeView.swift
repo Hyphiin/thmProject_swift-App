@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    //CMMotionManager() Objekt, welches alle Views bekommen
     @State static private var detector = MotionDetector(updateInterval: 0.01).started()
     
     var body: some View {
@@ -86,12 +87,10 @@ struct HomeView: View {
             .navigationTitle("Home")
             .background(Color.ui.backgroundColor)
         }
-       
     }
-       
-        
 }
 
+//Design der einzelnen Karten in der ListView
 struct CardView: View {
     var iconName: String
     var title: String
@@ -116,6 +115,7 @@ struct CardView: View {
     }
 }
 
+//um die Farben aus den Assets einfach zu benutzen
 extension Color {
     static let ui = Color.UI()
     

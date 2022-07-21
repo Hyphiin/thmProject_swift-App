@@ -13,14 +13,11 @@ struct StepcounterView: View {
     
     var body: some View {
         VStack{
-            Text(motionDetector.steps != nil ? "Steps: \(motionDetector.steps!)" : "0")
+            Text(motionDetector.steps != nil ? "Steps: \(motionDetector.steps!)" : "Keine Schrittdaten vorhanden")
         }
         .navigationTitle("Schrittzähler")
     }
-     
 }
-
-
 
 struct StepcounterView_Previews: PreviewProvider {
     @StateObject static var detector = MotionDetector(updateInterval: 0.01).started()

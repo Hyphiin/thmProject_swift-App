@@ -42,27 +42,28 @@ struct HomeView: View {
                                 title: "Seismometer"
                             )
                         }
-                        NavigationLink(destination: StepcounterView().environmentObject(HomeView.detector))
-                        {
-                            CardView(
-                                iconName: "figure.walk",
-                                title: "Schrittzähler"
-                            )
-                        }                        
-                    }.padding(.horizontal, 10)
-                    HStack{
                         NavigationLink(destination: RechnerView())
                         {
                             CardView(
                                 iconName: "plus.forwardslash.minus",
                                 title: "Rechner"
                             )
-                        }
+                        }                                              
+                    }.padding(.horizontal, 10)
+                    HStack{
+                        
                         NavigationLink(destination: TaschenlampeView())
                         {
                             CardView(
                                 iconName: "flashlight.on.fill",
                                 title: "Taschenlampe"
+                            )
+                        }
+                        NavigationLink(destination: StepcounterView().environmentObject(HomeView.detector))
+                        {
+                            CardView(
+                                iconName: "figure.walk",
+                                title: "Schrittzähler"
                             )
                         }
                     }.padding(.horizontal, 10)

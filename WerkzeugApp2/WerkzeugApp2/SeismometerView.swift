@@ -10,9 +10,10 @@ import SwiftUI
 struct SeismometerView: View{
     @EnvironmentObject var motionDetector: MotionDetector
     
-    let needleAnchor = UnitPoint(x: 0.5, y: 1)
+    //Ankerpunkt der Nadel
+    let needle = UnitPoint(x: 0.5, y: 1)
     let amplification = 2.0
-    var rotationAngle: Angle {
+    var rotation: Angle {
         Angle(radians: -motionDetector.zAcceleration * amplification)
     }
     
@@ -20,16 +21,17 @@ struct SeismometerView: View{
     var body: some View {
         VStack {
             Spacer()
-            
             ZStack(alignment: .bottom) {
-                //GaugeBackground(width: 250)
                 Rectangle()
                     .foregroundColor(Color.accentColor)
+                    //Rechteckt = kleine Nadel
                     .frame(width: 5, height: 190)
-                    .rotationEffect(rotationAngle, anchor: needleAnchor)
+                    .rotationEffect(rotation, anchor: needle)
+                    //Bereich der Über der Nadel liegt
                     .overlay {
                         VStack {
                             Spacer()
+                            //kleiner Kreis unten an der Nadel
                             Circle()
                                 .stroke(lineWidth: 3)
                                 .fill()
@@ -40,16 +42,12 @@ struct SeismometerView: View{
                         }
                     }
             }
-
             Spacer()
-            
             Text("\(motionDetector.zAcceleration.describeAsFixedLengthString())")
                 .font(.system(.body, design: .monospaced))
                 .fontWeight(.bold)
-
             Spacer()
         }
-        
         .navigationTitle("Seismometer")
     }
 }

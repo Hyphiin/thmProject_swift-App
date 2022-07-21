@@ -6,14 +6,12 @@
 //
 
 import SwiftUI
-
 @main
 struct WerkzeugApp2App: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
         }
-   
     }
 }
 

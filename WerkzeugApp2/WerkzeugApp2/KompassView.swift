@@ -27,8 +27,9 @@ struct KompassView: View {
                 .padding()
         
         }
-        .navigationTitle("Kompass")
+        .navigationTitle("Kompass")        
     }
+     
 }
 
 struct Marker: Hashable {
@@ -100,4 +101,11 @@ struct CompassMarkerView: View {
         return Angle(degrees: -self.compassDegrees - self.marker.degrees)
     }
     
+}
+
+struct KompassView_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        KompassView()
+    }
 }

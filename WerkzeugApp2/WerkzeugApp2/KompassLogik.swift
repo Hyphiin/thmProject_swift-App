@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import CoreLocation
+import SwiftUI
 
 class KompassLogik: NSObject, ObservableObject, CLLocationManagerDelegate {
     var objectWillChange = PassthroughSubject<Void, Never>()
@@ -16,13 +17,19 @@ class KompassLogik: NSObject, ObservableObject, CLLocationManagerDelegate {
             objectWillChange.send()
         }
     }
+    var speed: Double = .zero {
+        didSet {
+            objectWillChange.send()
+        }
+    }
     
     private let locationManager: CLLocationManager
+   
     
     override init() {
         self.locationManager = CLLocationManager()
+           
         super.init()
-        
         self.locationManager.delegate = self
         self.setup()
     }
@@ -30,13 +37,23 @@ class KompassLogik: NSObject, ObservableObject, CLLocationManagerDelegate {
     private func setup() {
         self.locationManager.requestWhenInUseAuthorization()
         
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
         if CLLocationManager.headingAvailable() {
-            self.locationManager.startUpdatingLocation()
             self.locationManager.startUpdatingHeading()
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        let latestLocation: AnyObject = locations[locations.count - 1]
+        speed = latestLocation.speed
+        print("didUpdateLocations: \(latestLocation)")
+    }
+    
     func locationManager (_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         self.degrees = -1 * newHeading.magneticHeading
+        print("didUpdateHeading:")
     }
+    
 }

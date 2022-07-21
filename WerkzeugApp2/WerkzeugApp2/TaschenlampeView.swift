@@ -10,14 +10,37 @@ import AVFoundation
 
 struct TaschenlampeView: View {
     
-    func toggleTorch(on: Bool) {
+    @State var toggleOn = false
+    
+    var cardIcon: String {
+        var iconName = ""
+        if toggleOn {
+            iconName = "flashlight.on.fill"
+        } else {
+            iconName = "flashlight.off.fill"
+        }
+        return iconName
+    }
+    
+    var cardTitle: String {
+        var title = ""
+        if toggleOn {
+            title = "Aus"
+        } else {
+            title = "An"
+        }
+        return title
+    }
+    
+    func toggleTorch() {
+        toggleOn = !toggleOn
         guard let device = AVCaptureDevice.default(for: .video) else { return }
 
         if device.hasTorch {
             do {
                 try device.lockForConfiguration()
 
-                if on == true {
+                if toggleOn == true {
                     device.torchMode = .on
                 } else {
                     device.torchMode = .off
@@ -36,19 +59,24 @@ struct TaschenlampeView: View {
         ZStack{
             VStack{
                 HStack{
-                    Button(action: { toggleTorch(on: true)}){
-                        Image(systemName: "flashlight.off.fill")
-                            .foregroundColor(Color.ui.accentColor)
-                    } 
-                    Button(action: { toggleTorch(on: false) }){
-                        Image(systemName: "flashlight.on.fill")
-                            .foregroundColor(Color.ui.accentColor)
+                    Button(action: { toggleTorch()}){
+                        CardView(
+                            iconName: cardIcon,
+                            title: cardTitle
+                        )
+                       
                     }
+                    
+                    
                 }.padding()
             }
         }
         .navigationTitle("Taschenlampe")
+        .frame(minWidth: 400, minHeight: 1500)
+        .background(toggleOn ? .white : .black)
+        .padding(.top,30)
     }
+        
 }
 
 struct TaschenlampeView_Previews: PreviewProvider {

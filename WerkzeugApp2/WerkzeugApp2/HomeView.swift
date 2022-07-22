@@ -13,7 +13,6 @@ struct HomeView: View {
     @State static private var detector = MotionDetector(updateInterval: 0.01).started()
     
     var body: some View {
-        
         NavigationView{
             ScrollView {
                 VStack{

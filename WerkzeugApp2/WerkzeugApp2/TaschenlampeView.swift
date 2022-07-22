@@ -76,7 +76,7 @@ struct TaschenlampeView: View {
             }
         }
         .navigationTitle("Taschenlampe")
-        .frame(minWidth: 400, minHeight: 1500)
+        .frame(minWidth: 400, minHeight: 1000)
         //Background farblich angepasst, um wenigstens so eine Taschenlampe zu erzeugen
         .background(toggleOn ? .white : .black)
         .padding(.top,30)
